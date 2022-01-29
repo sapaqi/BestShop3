@@ -1,2 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --containerWidth: 1352px;
+
+    --colorPrimary: #08A6E4;
+    --colorPrimaryShadow: rgba(7, 172, 230, .16);
+    --colorTouch1: #FB3B64;
+    --colorTouch2: #55DFB4;
+    --colorBlack: #000000;
+    --colorGrey: #A5A5A5;
+    --colorGreyLight: #F7F7F7;
+    --colorWhite: #FFFFFF;
+
+    --borderRadiusSmall: 5px;
+    --borderRadiusBig: 18px;
+
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
