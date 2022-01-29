@@ -16,10 +16,67 @@
     --borderRadiusSmall: 5px;
     --borderRadiusBig: 18px;
 
-
 }
 
+html {
+    font-size: 62.5%;
+}
 
 * {
     box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--containerWidth);
+    display: flex;
+}
+
+header {
+    width: 100%;
+    background: var(--colorWhite) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    opacity: 1;
+}
+header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotype {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 3.2rem;
+    color: var(--colorPrimary);
+    padding-left: 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu li {
+    padding: 0 3.6rem;
+}
+.menu li:last-child {
+    padding: 0 0 0 3.6rem;
+}
+.menuLink {
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--colorGrey);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+    padding: 0 1rem;
+    height: 7.6rem;
+    border-bottom: 4px solid var(--colorWhite);
+    border-top: 4px solid var(--colorWhite);
+}
+.menuLink:hover {
+    color: var(--colorBlack);
+    border-bottom: 4px solid var(--colorPrimary);
 }
