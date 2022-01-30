@@ -88,6 +88,9 @@ header .container {
 a {
     text-decoration: none;
 }
+a:hover {
+    cursor: pointer;
+}
 
 h1, h2, h3, h4, h5 {
     font-family: "Raleway", sans-serif;
@@ -154,6 +157,7 @@ p {
 }
 .buttonSecondary--2 {
     background: var(--colorPrimary) 0 0 no-repeat padding-box;
+    box-shadow: 5px 10px 14px var(--colorPrimaryShadow);
 }
 .buttonSecondary--3 {
     background: var(--colorTouch2) 0 0 no-repeat padding-box;
@@ -171,7 +175,7 @@ p {
     z-index:-1;
 }
 
-.statistics, .prices {
+.statistics {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -229,6 +233,14 @@ p {
     background: url("../assets/Catalog.svg") no-repeat center left;
 }
 
+.prices {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 0 12rem 0;
+    background: var(--colorWhite) 0 0 no-repeat padding-box;
+    opacity: 1;
+}
 .prices .container {
     justify-content: space-evenly;
     align-items: center;
@@ -381,5 +393,107 @@ p {
     background-color: var(--colorTouch2);
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 12rem 0;
+    background: var(--colorWhite) 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: calc(var(--containerWidth) - 500px);
+    margin-bottom: 40px;
+}
+.contactBox {
+    width: 50%;
+}
+.contactBox:first-child {
+    margin-right: 5rem;
+}
+.contactBox span {
+    font-family: "Raleway", sans-serif;
+    color: var(--colorBlack);
+    font-size: 5rem;
+    font-weight: 400;
+}
+.contactBox a {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--colorGrey);
+    padding-right: 2rem;
+}
+.contactBox a:hover {
+    color: var(--colorPrimary);
+}
 
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 1rem;
+}
+.contactForm__Input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.labelText {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: var(--colorPrimary);
+}
+.inputStyle {
+    padding: 1.2rem 0 0.3rem 0;
+    border: none;
+    border-bottom: 1px solid var(--colorGrey);
+    background-color: transparent;
+    font-size: 1.4rem;
+}
 
+.labelCheckbox {
+    position: relative;
+    display: block;
+    padding-left: 4rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.labelCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.labelCheckbox .checkbox__Hack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: var(--colorWhite) 0 0 no-repeat padding-box;
+    border: 1px solid var(--colorGrey);
+}
+.labelCheckbox input:checked ~ .checkbox__Hack {
+    background-image: url("../assets/Checkmark.svg");
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.labelCheckbox .checkbox__Text {
+    color: var(--colorGrey);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.contactForm .buttonSecondary {
+    border: none;
+    align-self: flex-end;
+}
