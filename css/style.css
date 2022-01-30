@@ -43,7 +43,14 @@ header {
     box-shadow: 0 3px 6px #00000029;
     opacity: 1;
 }
-header .container {
+footer {
+    width: 100%;
+    background: var(--colorGreyLight) 0 0 no-repeat padding-box;
+    box-shadow: 0 -5px 40px #00000029;
+    opacity: 1;
+    padding: 1rem 0;
+}
+header .container, footer .container {
     justify-content: space-between;
     align-items: center;
 }
@@ -54,6 +61,9 @@ header .container {
     font-size: 3.2rem;
     color: var(--colorPrimary);
     padding-left: 1rem;
+}
+.logotype--small {
+    font-size: 2.6rem;
 }
 
 .menu {
@@ -128,7 +138,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 13rem 0 52rem 0;
+    padding: 13rem 0 0rem 0;
 }
 .buttonPrimary {
     font-size: 1.6rem;
@@ -167,12 +177,8 @@ p {
     cursor: pointer;
 }
 .heroPic {
-    position:absolute;
-    bottom: 0;
-    background: url("../assets/Background.png") center/cover;
-    height: 519px;
     width: 100%;
-    z-index:-1;
+    height: auto;
 }
 
 .statistics {
@@ -397,7 +403,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0 12rem 0;
+    padding: 2rem 0 2rem 0;
     background: var(--colorWhite) 0 0 no-repeat padding-box;
     opacity: 1;
 }
@@ -496,4 +502,17 @@ p {
 .contactForm .buttonSecondary {
     border: none;
     align-self: flex-end;
+}
+
+footer span {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--colorGrey);
+    padding-top: 0.5rem;
+}
+.footer__icons {
+    padding-right: 1rem;
+}
+.footer__icons img:last-child {
+    padding-left: 0.5rem;
 }
