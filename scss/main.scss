@@ -4,9 +4,16 @@
 @import "utility/reset";
 @import "utility/fonts";
 @import "utility/grid";
+@import "utility/mixins";
 
 @import "components/general";
-@import "components/navigation";
+@import "components/buttons";
+
 @import "components/header";
+@import "components/section-statistics";
+@import "components/section-prices";
+@import "components/section-benefits";
+@import "components/section-contact";
+@import "components/footer";
 
 

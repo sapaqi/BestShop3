@@ -1,0 +1,149 @@
+.header {
+  background: $color-white 0 0 no-repeat padding-box;
+  box-shadow: 0 3px 6px #00000029;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logotype {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: $color-primary;
+    padding: 1rem 2rem;
+  }
+
+  .menu {
+
+    &__btn {
+      display: none;
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      opacity: 0;
+
+      @include mobile {
+        &:checked {
+          ~ .header__nav {
+            display: flex;
+          }
+
+          ~ .menu__toggle {
+            span {
+              &:nth-child(1) {
+                transform: rotate(45deg) translate(2px, 5px);
+              }
+
+              &:nth-child(2) {
+                opacity: 0;
+              }
+
+              &:nth-child(3) {
+                transform: rotate(-45deg) translate(2px, -5px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__toggle {
+      display: none;
+      padding-right: 2rem;
+
+      span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $color-primary;
+        transition: .3s all ease-in-out;
+        margin-bottom: 3px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+  }
+
+  &__nav {
+    display: flex;
+    padding-right: 2rem;
+
+    @include mobile {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 4.5rem;
+      left: 0;
+      background-color: $color-white;
+      width: 100%;
+      padding: 1rem 0;
+      background: $color-white 0 0 no-repeat padding-box;
+      box-shadow: 0 3px 6px #00000029;
+
+      .nav__element {
+        padding: 0 2rem;
+      }
+
+      .nav__link {
+        display: block;
+        padding: 5px 0;
+      }
+    }
+  }
+
+  .nav {
+    &__element {
+      padding-right: 3rem;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &__link {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: $color-grey;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      line-height: 2rem;
+      padding: 1rem 0;
+      border-bottom: 4px solid transparent;
+
+      &:hover, &:active {
+        color: $color-black;
+        border-bottom: 4px solid $color-primary;
+      }
+
+    }
+  }
+
+}
+
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 13rem 0 0 0;
+}
+
+.heroPic {
+  width: 100%;
+  height: auto;
+}

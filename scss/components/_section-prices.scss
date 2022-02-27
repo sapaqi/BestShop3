@@ -1,0 +1,85 @@
+.prices {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 0 12rem 0;
+  background: $color-white 0 0 no-repeat padding-box;
+  opacity: 1;
+}
+
+.prices .container {
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 0 0 0;
+}
+
+.pricesBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $color-touch1;
+  border-radius: $border-radius-big;
+  padding: 3rem 8rem;
+}
+
+.pricesBox--big {
+  border: 1px solid $color-primary;
+  box-shadow: 5px 10px 27px $color-primary-shadow;
+  padding: 5rem 10rem;
+}
+
+.pricesBox--3 {
+  border: 1px solid $color-touch2;
+}
+
+.pricesBox__Price {
+  font-size: 4.6rem;
+  font-weight: 300;
+  color: $color-touch1;
+  padding: 3rem 0;
+}
+
+.pricesBox__Price--2 {
+  color: $color-primary;
+}
+
+.pricesBox__Price--3 {
+  color: $color-touch2;
+}
+
+.pricesBox ul {
+  margin-top: 3rem;
+}
+
+.featureV {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.featureV::before {
+  content: "";
+  display: inline-block;
+  background: url("../assets/Ckechmark-1.svg") no-repeat center;
+  width: 1.8rem;
+  height: 1.8rem;
+  vertical-align: top;
+  margin-right: 0.5rem;
+}
+
+.featureV--not::before {
+  background: url("../assets/Close.svg") no-repeat center;
+}
+
+.pricesBox .buttonSecondary {
+  position: relative;
+  bottom: -5.25rem;
+}
+
+.pricesBox .buttonSecondary--2 {
+  position: relative;
+  bottom: -7.25rem;
+}

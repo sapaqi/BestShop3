@@ -1,0 +1,52 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  [class*="col-"] {
+    min-height: 1px;
+    width: $column-base-width;
+    padding: 1rem;
+  }
+
+  @for $i from 1 through 12 {
+    .col-xs-#{$i} {
+      width: $column-base-width * $i;
+    }
+  }
+
+  @media (min-width: $breakpoints-sm)  {
+    @for $i from 1 through 12 {
+      .col-sm-#{$i} {
+        width: $column-base-width * $i;
+      }
+    }
+
+  }
+
+  @media (min-width: $breakpoints-md)  {
+    @for $i from 1 through 12 {
+      .col-md-#{$i} {
+        width: $column-base-width * $i;
+      }
+    }
+
+  }
+
+  @media (min-width: $breakpoints-lg)  {
+    @for $i from 1 through 12 {
+      .col-lg-#{$i} {
+        width: $column-base-width * $i;
+      }
+    }
+
+  }
+
+  @media (min-width: $breakpoints-xl)  {
+    @for $i from 1 through 12 {
+      .col-xl-#{$i} {
+        width: $column-base-width * $i;
+      }
+    }
+
+  }
+}

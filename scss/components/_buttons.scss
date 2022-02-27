@@ -1,0 +1,41 @@
+.buttonPrimary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $color-white;
+  padding: 2.2rem 16rem;
+  background: $color-primary 0 0 no-repeat padding-box;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+  border-radius: 40px;
+  opacity: 1;
+}
+
+.buttonPrimary:hover {
+  background-color: $color-touch1;
+  box-shadow: 5px 10px 14px $color-touch1-shadow;
+  cursor: pointer;
+}
+
+.buttonSecondary {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 700;
+  color: $color-white;
+  padding: 1.6rem 6rem;
+  background: $color-touch1 0 0 no-repeat padding-box;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.buttonSecondary--2 {
+  background: $color-primary 0 0 no-repeat padding-box;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+}
+
+.buttonSecondary--3 {
+  background: $color-touch2 0 0 no-repeat padding-box;
+}
+
+.buttonSecondary:hover {
+  background-color: $color-black;
+  cursor: pointer;
+}

@@ -1,4 +1,15 @@
+@use "sass:math";
+
 $container-width: 1352px;
 
+$columns: 12;
+$column-base-width: math.div(100%, $columns);
+
+$breakpoints-sm: 736px;
+$breakpoints-md: 980px;
+$breakpoints-lg: 1280px;
+$breakpoints-xl: 1680px;
+
+$transition: 0.2s;
 $border-radius-small: 5px;
 $border-radius-big: 18px;
